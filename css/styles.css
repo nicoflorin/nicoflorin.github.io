@@ -1,0 +1,177 @@
+/* ===========================================
+Stylesheet für die Diplomarbeit
+Datei: style.css
+Autor: Nico Florin
+============================================*/
+
+/* ===========================================
+    Global Styles
+============================================*/
+
+body {
+    /* for smoother font on chrome */
+    -webkit-font-smoothing; antialiased;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 60px; /* because of the fixed footer */
+
+}
+
+.well {
+    margin: 10px 0; /* little margin to the top and bottom of well */   
+}
+
+
+
+
+/* ===========================================
+    Navbar
+============================================*/
+
+/* change hover, focus for navbar li */
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+    background-color: #191919;
+    color: #777; /* same color as non-hover */
+}
+
+.navbar {
+    margin-bottom: 10px; 
+}
+
+
+/* ===========================================
+    Carousel
+============================================*/
+
+#mainCarousel {
+    /* margin-top: 60px;   /* margin to the navigation, when nav-fixed-top */
+}
+
+.carousel-caption {
+       font-size: 24px; /* font size of carousel text */
+}
+
+.carousel-caption h4 {  /* font size of carousel titel */
+       font-size: 32px
+}
+
+
+/* Default Settings for Carousel */
+#mainCarousel .item {
+    height: 400px;   
+}
+
+#slide1 {
+    background: url('../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+    background: url('../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide3 {
+    background: url('../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+
+/* ===========================================
+    Callout
+============================================*/
+
+.well .page-header {
+    margin-top: 0;   
+}
+
+.well .page-header h1 {
+    margin-top: 0;   
+}
+
+
+/* ===========================================
+    Footer
+============================================*/
+
+
+footer {
+    background-color: #f8f8f8;
+    font-size: 14px;
+    padding: 10px;
+    
+    /* footer fixed to bottom */
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/* ===========================================
+    Media Queries
+============================================*/
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    
+    /* Specific Carousel Settings */
+    #mainCarousel .item {
+        height: 310px;   
+    }
+
+    #slide1 {
+        background: url('../images/carousel_small_01.jpg') top center no-repeat;
+    }
+
+    #slide2 {
+        background: url('../images/carousel_small_01.jpg') top center no-repeat;
+    }
+
+    #slide3 {
+        background: url('../images/carousel_small_01.jpg') top center no-repeat;
+    }
+    
+    /* Smaller font for small screen width */
+    .carousel-caption {
+        font-size: 16px;   
+    }
+    
+    .carousel-caption h4 {
+        font-size: 22px; 
+    }
+    
+    
+    #mainContainer {
+    /* small padding on small devices */
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+
+    
+}
+
+/* Large desktop */
+@media (max-width: 1200px) {
+    
+    /* Specific Carousel Settings */
+    #mainCarousel .item {
+        height: 500;   
+    }
+
+    #slide1 {
+        background: url('../images/carousel_large_01.jpg') top center no-repeat;
+    }
+
+    #slide2 {
+        background: url('../images/carousel_large_01.jpg') top center no-repeat;
+    }
+
+    #slide3 {
+        background: url('../images/carousel_large_01.jpg') top center no-repeat;
+    }
+    
+}
